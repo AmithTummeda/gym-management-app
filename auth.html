@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Gym App — Login / Signup</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main class="container">
+            <h1>GYM APP</h1>
+            <button onclick="window.location.href='index.html'" style="margin-top:-4.7rem; margin-left:50rem">&larr; Home</button>
+            <section id="auth">
+                <div class="card">
+                    <h2>LOG IN</h2>
+                    <input id="loginEmail" type="email" placeholder="Email" />
+                    <input id="loginPassword" type="password" placeholder="Password" />
+                    <button id="loginBtn">Log In</button>
+
+                    <p class="muted">or</p>
+
+                    <h2>SIGN UP (Members)</h2>
+                    <input id="signupName" type="text" placeholder="Full name" />
+                    <input id="signupEmail" type="email" placeholder="Email" />
+                    <input id="signupPassword" type="password" placeholder="Password (6+ chars)" />
+                    <button id="signupBtn">Sign Up</button>
+
+                    <p id="authMsg" class="muted"></p>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Member Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="topbar">
+            <h1>Member Dashboard</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h2>Your Receipts</h2>
+                <ul id="receiptList"></ul>
+            </section>
+            <section class="card">
+                <h2>Announcements</h2>
+                <ul id="announcementList"></ul>
+            </section>
+            <section class="card">
+                <h2>Fee Reminders</h2>
+                <ul id="reminderList"></ul>
+            </section>
+        </main>
+
+        <script type="module" src="member.js"></script>
+    </body>
+</html>

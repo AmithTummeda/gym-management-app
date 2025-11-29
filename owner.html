@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Owner Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="topbar">
+            <h1>Owner Dashboard</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h2>Add Receipt</h2>
+                <form id="addReceiptForm">
+                    <input type="text" id="memberName" placeholder="Member Name" required>
+                    <input type="text" id="memberId" placeholder="Member UID" required>
+                    <input type="number" id="amount" placeholder="Amount" required>
+                    <input type="text" id="month" placeholder="Month (e.g. November 2025)" required>
+                    <select id="status" required>
+                        <option value="Paid">Paid</option>
+                        <option value="Pending">Pending</option>
+                    </select>
+                    <button type="submit">Add</button>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>All Receipts</h2>
+                <ul id="receiptsList"></ul>
+            </section>
+
+            <section class="card">
+                <h2>Post Announcement</h2>
+                <form id="addAnnouncementForm">
+                    <input type="text" id="announcementTitle" placeholder="Title" required>
+                    <textarea id="announcementText" placeholder="Announcement text" required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>All Announcements</h2>
+                <ul id="announcementList"></ul>
+            </section>
+        </main>
+
+        <script type="module" src="owner.js"></script>
+    </body>
+</html>
